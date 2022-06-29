@@ -1,0 +1,20 @@
+<div class="container">
+
+    <input #capturedImage class="camera" type="file" accept="image/*" capture="environment" (change)="imageCapture($event)" />
+    <div class="button-container">
+        <button class="primary-button" (click)="capturedImage.click()">Capture</button>
+        <button class="secondary-button" (click)="openGallery()">View Gallery</button>
+    </div>
+
+    <div class="illustration-container">
+        <img src="../../assets/images/undraw_camera_re_cnp4.svg" alt="">
+    </div>
+
+    <div class="tag"> 
+        <p>Moments that matter</p>
+    </div>
+
+</div>
+
+
+<!-- <button (click)="upload()">upload</button> -->

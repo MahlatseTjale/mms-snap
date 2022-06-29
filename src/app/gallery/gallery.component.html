@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="title-container">
+        <hr>
+        <button class="back-button" (click)="back()">Back</button>
+        <span class="title">Captured Images</span>
+        <hr>
+    </div>
+    <div class="card-container" *ngIf="capturedImages.length != 0">
+        <div class="card" *ngFor="let url of capturedImages">
+            <div class="image-container">
+                <img [src]="url.url" class="captured-images" />
+            </div>
+            <div class="date-container">
+                <span class="date-title">Date: </span>
+                <span class="date">{{url.time | date:'EEE, dd MMMM - HH:mm' }}</span>
+            </div>
+        </div>
+    </div>
+    
+        <div class="illustration-container" *ngIf="capturedImages.length === 0">
+            <img src="../../assets/images/undraw_feeling_blue_-4-b7q.svg" alt="">
+        
+        <p>No images available</p>
+        </div>
+</div>
+
+

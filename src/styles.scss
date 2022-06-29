@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: BentonSans-Regular;
+    src: url('./assets/fonts/bentonsans/bentonsans-regular-webfont.ttf');
+}
+
+@font-face {
+    font-family: BentonSans-Medium;
+    src: url('./assets/fonts/bentonsans/bentonsans-medium-webfont.ttf');
+}
+
+@font-face {
+    font-family: BentonSans-Bold;
+    src: url('./assets/fonts/bentonsans/bentonsans-bold-webfont.ttf');
+}
+
+@font-face {
+    font-family: Inter-Light;
+    src: url('./assets/fonts/Inter/Inter-Light-BETA.ttf');
+}
+
+body{
+    font-family: BentonSans-Regular;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px){
+    
+}
+
