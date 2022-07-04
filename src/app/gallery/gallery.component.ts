@@ -24,17 +24,4 @@ export class GalleryComponent implements OnInit {
     this.router.navigate(["home"]);
 
   }
-
-  // upload() {
-  //   let formData = new FormData();
-  //   for (var i = 0; i < this.uploadedFiles.length; i++) {
-  //     formData.append("uploads[]", this.uploadedFiles[i], this.uploadedFiles[i].name);
-  //   }
-  //   this.http.post('src/assets/captured-Images', formData)
-  //     .subscribe((response) => {
-  //     console.log('response received is ', response);
-  //   })
-  // }
-
-
 }
