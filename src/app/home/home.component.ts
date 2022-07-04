@@ -1,6 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import {ImagesService} from '../images.service';
+import { Component, OnInit } from '@angular/core';
+import { ImagesService } from '../images.service';
 import { Router } from '@angular/router';
 
 @Component({
