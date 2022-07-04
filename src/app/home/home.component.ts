@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  // capturedImages: any[] = [];
 
 
   constructor(private router: Router, private _imagesService: ImagesService) { }
@@ -36,20 +35,6 @@ export class HomeComponent implements OnInit {
   openGallery(){
     this.router.navigate(["gallery"]);
   }
-
-
-  // upload() {
-  //   let formData = new FormData();
-  //   for (var i = 0; i < this.uploadedFiles.length; i++) {
-  //     formData.append("uploads[]", this.uploadedFiles[i], this.uploadedFiles[i].name);
-  //   }
-  //   this.http.post('src/assets/captured-Images', formData)
-  //     .subscribe((response) => {
-  //     console.log('response received is ', response);
-  //   })
-  // }
-
-
 
 }
 
